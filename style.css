@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+  padding: 5rem;
+}
+
+.container {
+  max-width: 60rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: 0px 10px 20px 2px hsl(218, 22%, 67%);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.hero-container {
+  grid-column: 1/3;
+  grid-row: 1/2;
+  background-color: hsl(0, 0%, 100%);
+  padding: 3rem;
+}
+
+.subscription-container {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background-color: hsl(179, 62%, 43%);
+  padding: 3rem;
+}
+
+.about-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: #6ac9c7;
+  padding: 3rem;
+}
+
+.hero-head {
+  font-size: 3rem;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+  margin-bottom: 2rem;
+}
+
+.hero-subhead {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 1.5rem;
+}
+
+.hero-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: hsl(218, 22%, 67%);
+  line-height: 2.5rem;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 1.5rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.money {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+}
+
+.month {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: hsla(203, 44%, 93%, 0.548);
+}
+
+.subs-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: hsl(204, 43%, 93%);
+  margin-bottom: 2rem;
+}
+
+.about-text {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: hsl(204, 43%, 93%);
+}
+
+button {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: hsl(204, 43%, 93%);
+  background-color: hsl(71, 73%, 54%);
+  width: 100%;
+  height: 5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #869c24;
+}
+
+@media (max-width: 660px) {
+  body {
+    padding: 2rem;
+  }
+
+  .container {
+    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .hero-container {
+    grid-column: 1/3;
+    grid-row: 1/2;
+  }
+  .subscription-container {
+    grid-column: 1/3;
+    grid-row: 2/3;
+  }
+  .about-container {
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+}
